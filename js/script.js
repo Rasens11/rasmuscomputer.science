@@ -71,17 +71,15 @@ if (window.location.href.indexOf("quizresult") > -1) {
                 n++
             }
         }
-	}
 	
-	var sum = arr.reduce(add, 0);
-	function add(a, b) {
-		return a + b;
-	};
-	
-	window.onload = function () {
+		var sum = arr.reduce(add, 0);
+		function add(a, b) {
+			return a + b;
+		};
+		
 		document.getElementById("resultTotal").innerHTML = sum;
+	
 	}
-
     /*
     if (ansNewArr[n-1] == 1) {
         document.getElementById("ans" + n).innerHTML = r;
