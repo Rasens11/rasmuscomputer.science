@@ -61,7 +61,7 @@ if (window.location.href.indexOf("quizresult") > -1) {
     var arr = JSON.parse(ansNewArr);
     console.log(ansNewArr);
     window.onload = function () {
-        for (i = 0; i < arr.length; i++)
+        for (i = 0; i < arr.length; i++) {
             if (arr[n - 1] == 1) {
                 document.getElementById("ans".concat(n)).innerHTML = r;
                 n++
@@ -71,6 +71,16 @@ if (window.location.href.indexOf("quizresult") > -1) {
                 n++
             }
         }
+	}
+	
+	var sum = arr.reduce(add, 0);
+	function add(a, b) {
+		return a + b;
+	};
+	
+	window.onload = function () {
+		document.getElementById("resultTotal").innerHTML = sum;
+	}
 
     /*
     if (ansNewArr[n-1] == 1) {
@@ -85,6 +95,7 @@ if (window.location.href.indexOf("quizresult") > -1) {
 var boolQuiz10;
 var rightAns = 0;
 var url = "http://rasmuscomputer.science/quiz";
+//var url = "file:///C:/Users/Rasmus%20Kirk/Downloads/Programmering%20opgave/quiz"
 var linkEnd = ".html";
 
 function storeArrayCookie(n) {

@@ -88,3 +88,7 @@ table, th, td {
 th, td {
     padding: 10px;
 }
+
+.resultText {
+	font-size: 1.7em;
+}
