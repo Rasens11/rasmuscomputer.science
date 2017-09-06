@@ -84,7 +84,7 @@ if (window.location.href.indexOf("quizresult") > -1) {
 
 var boolQuiz10;
 var rightAns = 0;
-var url = "file:///C:/Users/Rasmus Kirk/Downloads/Programmering opgave/quiz";
+var url = "http://rasmuscomputer.science/quiz";
 var linkEnd = ".html";
 
 function storeArrayCookie(n) {
