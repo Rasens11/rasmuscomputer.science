@@ -78,7 +78,6 @@ if (window.location.href.indexOf("quizresult") > -1) {
 		};
 		
 		document.getElementById("resultTotal").innerHTML = sum;
-	
 	}
     /*
     if (ansNewArr[n-1] == 1) {
