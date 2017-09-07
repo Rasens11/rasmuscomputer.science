@@ -92,3 +92,8 @@ th, td {
 .resultText {
 	font-size: 1.7em;
 }
+
+a {
+	text-decoration: none;
+	color: whitesmoke;
+}
